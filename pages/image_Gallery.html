@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCBA | Image Gallery</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <img src="../assets/icon/lcba.png" alt="LCBA Logo" width="72" height="72">
+  <h1>LAGUNA COLLEGE OF BUSINESS AND ARTS</h1>
+</header>
+
+<nav class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="about_LCBA.html">About LCBA</a>
+  <a href="about_ABM.html">About ABM</a>
+  <a href="image_Gallery.html" class="active">Image Gallery</a>
+  <a href="video_Gallery.html">Video Gallery</a>
+  <a href="quiz.html">Math Quiz</a>
+  <a href="math_game.html">Math Game</a>
+</nav>
+
+<div class="page-content">
+
+  <div class="slideshow-container" id="gallerySlider">
+    <div class="mySlides fade"><div class="numbertext">1 / 11</div><img src="../assets/image/ABM1.png" alt="ABM 1"></div>
+    <div class="mySlides fade"><div class="numbertext">2 / 11</div><img src="../assets/image/ABM2.png" alt="ABM 2"></div>
+    <div class="mySlides fade"><div class="numbertext">3 / 11</div><img src="../assets/image/ABM3.png" alt="ABM 3"></div>
+    <div class="mySlides fade"><div class="numbertext">4 / 11</div><img src="../assets/image/ABM4.png" alt="ABM 4"></div>
+    <div class="mySlides fade"><div class="numbertext">5 / 11</div><img src="../assets/image/ABM5.png" alt="ABM 5"></div>
+    <div class="mySlides fade"><div class="numbertext">6 / 11</div><img src="../assets/image/ABM6.png" alt="ABM 6"></div>
+    <div class="mySlides fade"><div class="numbertext">7 / 11</div><img src="../assets/image/ABM7.png" alt="ABM 7"></div>
+    <div class="mySlides fade"><div class="numbertext">8 / 11</div><img src="../assets/image/ABM8.png" alt="ABM 8"></div>
+    <div class="mySlides fade"><div class="numbertext">9 / 11</div><img src="../assets/image/ABM9.png" alt="ABM 9"></div>
+    <div class="mySlides fade"><div class="numbertext">10 / 11</div><img src="../assets/image/ABM10.png" alt="ABM 10"></div>
+    <div class="mySlides fade"><div class="numbertext">11 / 11</div><img src="../assets/image/ABM11.png" alt="ABM 11"></div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+
+  <div class="dots-container" id="gallery-dots">
+    <span class="dot" onclick="goSlide(1)"></span>
+    <span class="dot" onclick="goSlide(2)"></span>
+    <span class="dot" onclick="goSlide(3)"></span>
+    <span class="dot" onclick="goSlide(4)"></span>
+    <span class="dot" onclick="goSlide(5)"></span>
+    <span class="dot" onclick="goSlide(6)"></span>
+    <span class="dot" onclick="goSlide(7)"></span>
+    <span class="dot" onclick="goSlide(8)"></span>
+    <span class="dot" onclick="goSlide(9)"></span>
+    <span class="dot" onclick="goSlide(10)"></span>
+    <span class="dot" onclick="goSlide(11)"></span>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <p>© 2024 Laguna College of Business and Arts</p>
+</footer>
+
+<script src="../scripts/img_gallery.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCBA | Tindahan ni Juan</title>
+  <link rel="stylesheet" href="../styles/game_style.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <style>
+
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <img src="../assets/icon/lcba.png" alt="LCBA Logo" width="72" height="72">
+  <h1>LAGUNA COLLEGE OF BUSINESS AND ARTS</h1>
+</header>
+
+<nav class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="about_LCBA.html">About LCBA</a>
+  <a href="about_ABM.html">About ABM</a>
+  <a href="image_Gallery.html">Image Gallery</a>
+  <a href="video_Gallery.html">Video Gallery</a>
+  <a href="quiz.html">Math Quiz</a>
+  <a href="math_game.html" class="active">Math Game</a>
+</nav>
+
+<div class="game-wrap">
+  <div id="screen-start" class="screen active">
+    <div class="start-card">
+      <span class="store-emoji">🏪</span>
+      <h2>Tindahan ni Juan</h2>
+      <p class="tagline">An ABM Business Simulation Game</p>
+      <div class="intro-box">
+        <strong>Welcome, future entrepreneur!</strong> You just opened a small sari-sari store in your barangay.
+        Over <strong>7 business days</strong>, you'll face real-world ABM scenarios involving:<br><br>
+        📦 <strong>Buying &amp; selling goods</strong> &nbsp;|&nbsp;
+        💰 <strong>Profit &amp; loss</strong> &nbsp;|&nbsp;
+        🧾 <strong>VAT &amp; taxes</strong> &nbsp;|&nbsp;
+        📈 <strong>Markup &amp; discount</strong> &nbsp;|&nbsp;
+        🏦 <strong>Simple interest</strong><br><br>
+        Solve each math problem correctly to maximize your profit.
+        At the end, you'll get a <strong>Business Report Card</strong>!
+      </div>
+      <div class="name-wrap">
+        <label for="owner-name">Enter your name, store owner:</label>
+        <input type="text" id="owner-name" placeholder="e.g. Maria Santos" maxlength="24">
+      </div>
+      <button class="big-btn" onclick="startGame()">Open Store 🏪</button>
+    </div>
+  </div>
+
+
+  <div id="screen-game" class="screen">
+    <div class="hud">
+      <div class="hud-box"><span class="hud-label">💵 Cash</span><span class="hud-val" id="hud-cash">₱5,000</span></div>
+      <div class="hud-box"><span class="hud-label">📈 Revenue</span><span class="hud-val good" id="hud-rev">₱0</span></div>
+      <div class="hud-box"><span class="hud-label">📉 Expenses</span><span class="hud-val bad" id="hud-exp">₱0</span></div>
+      <div class="hud-box"><span class="hud-label">🏆 Score</span><span class="hud-val" id="hud-score">0</span></div>
+    </div>
+    <div class="day-badge" id="day-badge">📅 Day 1 of 7 — Monday</div>
+    <div class="progress-dots" id="prog-dots"></div>
+    <div class="scenario-card">
+      <span class="sc-tag" id="sc-tag"></span>
+      <span class="sc-icon" id="sc-icon"></span>
+      <div class="sc-title" id="sc-title"></div>
+      <div class="sc-desc"  id="sc-desc"></div>
+      <div class="math-box" id="sc-math"></div>
+      <div class="choices"  id="sc-choices"></div>
+      <div class="feedback-box" id="sc-feedback"></div>
+      <button class="next-btn" id="next-btn" onclick="nextScenario()">Next Day →</button>
+    </div>
+  </div>
+
+
+  <div id="screen-end" class="screen">
+    <div class="end-card">
+      <span class="store-emoji">📊</span>
+      <h2>Business Report Card</h2>
+      <p id="end-owner" style="color:#777;margin-bottom:14px;"></p>
+      <span class="final-grade" id="final-grade">A</span>
+      <p class="final-sub" id="final-sub">Outstanding!</p>
+      <div class="rank-badge" id="rank-badge">🏆 Top Trader</div>
+      <div class="final-report" id="final-report"></div>
+      <div class="btn-row">
+        <button class="action-btn primary" onclick="startGame()">Play Again</button>
+        <button class="action-btn secondary" onclick="location.href='quiz.html'">Try the Quiz</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <p>© 2024 Laguna College of Business and Arts</p>
+</footer>
+
+<script src="../scripts/game.js"></script>
+
+</body>
+</html>

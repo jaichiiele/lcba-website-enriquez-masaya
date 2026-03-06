@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCBA | ABM</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <img src="../assets/icon/lcba.png" alt="LCBA Logo" width="72" height="72">
+  <h1>LAGUNA COLLEGE OF BUSINESS AND ARTS</h1>
+</header>
+
+<nav class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="about_LCBA.html">About LCBA</a>
+  <a href="about_ABM.html" class="active">About ABM</a>
+  <a href="image_Gallery.html">Image Gallery</a>
+  <a href="video_Gallery.html">Video Gallery</a>
+  <a href="quiz.html">Math Quiz</a>
+  <a href="math_game.html">Math Game</a>
+</nav>
+
+<div class="page-content">
+
+  <div class="slideshow-container" id="abmSlider">
+    <div class="mySlides fade"><div class="numbertext">1 / 3</div><img src="../assets/image/ABM1.jpg" alt="ABM Students"></div>
+    <div class="mySlides fade"><div class="numbertext">2 / 3</div><img src="../assets/image/ABM2.jpg" alt="ABM Class"></div>
+    <div class="mySlides fade"><div class="numbertext">3 / 3</div><img src="../assets/image/ABM3.jpg" alt="ABM Activities"></div>
+    <a class="prev" onclick="changeSlide('abm', -1)">&#10094;</a>
+    <a class="next" onclick="changeSlide('abm', 1)">&#10095;</a>
+  </div>
+  <div class="dots-container" id="abm-dots">
+    <span class="dot" onclick="goSlide('abm',1)"></span>
+    <span class="dot" onclick="goSlide('abm',2)"></span>
+    <span class="dot" onclick="goSlide('abm',3)"></span>
+  </div>
+
+  <div class="prose">
+    <h2>Accountancy, Business, and Management (ABM)</h2>
+    <p>The Accountancy, Business, and Management (ABM) strand is a Senior High School academic track in the Philippines designed for students pursuing careers in business, finance, accounting, and entrepreneurship. It focuses on building foundational knowledge in management, marketing, financial literacy, and operations through specialized subjects and practical, real-world simulations.</p>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <p>© 2024 Laguna College of Business and Arts</p>
+</footer>
+
+<script src="../scripts/about_abm.js"></script>
+
+</body>
+</html>

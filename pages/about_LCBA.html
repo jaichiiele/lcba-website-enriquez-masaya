@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCBA | About</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <img src="../assets/icon/lcba.png" alt="LCBA Logo" width="72" height="72">
+  <h1>LAGUNA COLLEGE OF BUSINESS AND ARTS</h1>
+</header>
+
+<nav class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="about_LCBA.html" class="active">About LCBA</a>
+  <a href="about_ABM.html">About ABM</a>
+  <a href="image_Gallery.html">Image Gallery</a>
+  <a href="video_Gallery.html">Video Gallery</a>
+  <a href="quiz.html">Math Quiz</a>
+  <a href="math_game.html">Math Game</a>
+</nav>
+
+<div class="page-content">
+
+  <div class="slideshow-container" id="lcbaSlider">
+    <div class="mySlides fade"><div class="numbertext">1 / 6</div><img src="../assets/image/Llamas4.jpg" alt="Pedro Evangelista Llamas"></div>
+    <div class="mySlides fade"><div class="numbertext">2 / 6</div><img src="../assets/image/Llamas.jpg" alt="Pedro Evangelista Llamas and His Wife"></div>
+    <div class="mySlides fade"><div class="numbertext">3 / 6</div><img src="../assets/image/LCBA1.jpg" alt="LCBA"></div>
+    <div class="mySlides fade"><div class="numbertext">4 / 6</div><img src="../assets/image/LCBA2.jpg" alt="LCBA"></div>
+    <div class="mySlides fade"><div class="numbertext">5 / 6</div><img src="../assets/image/LCBA3.jpg" alt="LCBA"></div>
+    <div class="mySlides fade"><div class="numbertext">6 / 6</div><img src="../assets/image/LCBA4.jpg" alt="LCBA"></div>
+    <a class="prev" onclick="changeSlide('lcba', -1)">&#10094;</a>
+    <a class="next" onclick="changeSlide('lcba', 1)">&#10095;</a>
+  </div>
+  <div class="caption-bar" id="lcba-caption"></div>
+  <div class="thumb-row" id="lcba-thumbs">
+    <img src="../assets/image/Llamas4.jpg" alt="Pedro Evangelista Llamas" onclick="goSlide('lcba',1)">
+    <img src="../assets/image/Llamas.jpg" alt="Pedro Evangelista Llamas and His Wife" onclick="goSlide('lcba',2)">
+    <img src="../assets/image/LCBA1.jpg" alt="LCBA" onclick="goSlide('lcba',3)">
+    <img src="../assets/image/LCBA2.jpg" alt="LCBA" onclick="goSlide('lcba',4)">
+    <img src="../assets/image/LCBA3.jpg" alt="LCBA" onclick="goSlide('lcba',5)">
+    <img src="../assets/image/LCBA4.jpg" alt="LCBA" onclick="goSlide('lcba',6)">
+  </div>
+
+  <div class="prose">
+    <h2>About Pedro Evangelista Llamas</h2>
+    <p>Pedro Evangelista Llamas was born in Pagsanjan, Laguna on August 01, 1884. Both of his parents, Gabriel Llamas and Eleutera Evangelista were born and raised in the same town too.</p>
+    <br>
+    <p>He studied in St. Joseph Catholic School in Hongkong for two years and continued his education in the United States where he received his Bachelor of Science in Pharmaceutical Chemistry from the University of Michigan.</p>
+    <br>
+    <p>At the young age of 28, he married Josefa Gomez Francia on August 26, 1912 and was blessed with nine children: Herminio, Guadalupe, Fidel, Amor, Luis, Jose, Mario, Carlos, and Eva.</p>
+    <br>
+    <p>At 32, he was elected Municipal President of Pagsanjan for four years (1916–1920). He declined to be re-elected due to health problems.</p>
+    <br>
+    <p>In 1923, he founded the Pagsanjan Academy. Later, realizing the need for secondary schools, he established Laguna Institute in 1930.</p>
+    <br>
+    <p>The Laguna Institute flourished amidst the havoc of World War II. It closed temporarily in 1945 and opened again in 1950.</p>
+    <br>
+    <p>Don Pedro Llamas died January 13, 1946 at the age of 61. His legacy lives on through the institution he built — providing quality education to the community of Laguna.</p>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <p>© 2024 Laguna College of Business and Arts</p>
+</footer>
+
+<script src="../scripts/about_lcba.js"></script>
+</body>
+</html>

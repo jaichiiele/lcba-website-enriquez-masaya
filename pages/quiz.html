@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Quiz</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <img src="../assets/icon/lcba.png" alt="LCBA Logo" width="72" height="72">
+  <h1>LAGUNA COLLEGE OF BUSINESS AND ARTS</h1>
+</header>
+
+<nav class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="about_LCBA.html">About LCBA</a>
+  <a href="about_ABM.html">About ABM</a>
+  <a href="image_Gallery.html">Image Gallery</a>
+  <a href="video_Gallery.html">Video Gallery</a>
+  <a href="quiz.html" class="active">Math Quiz</a>
+  <a href="math_game.html">Math Game</a>
+</nav>
+
+<div class="quiz-wrap">
+  <div class="quiz-card">
+    <div class="quiz-header">
+      <span style="font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);font-weight:700;">🧮 Math Quiz</span>
+      <span class="quiz-progress" id="progress-text">Question 1 of 5</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:20%"></div></div>
+    <div id="quiz-area">
+      <p class="quiz-question" id="question-text"></p>
+      <div class="quiz-options" id="options"></div>
+      <button class="quiz-next" id="next-btn" onclick="handleNext()">Next →</button>
+    </div>
+    <div id="score-area" class="quiz-score" style="display:none">
+      <span class="score-number" id="score-display"></span>
+      <h2>Quiz Complete!</h2>
+      <p id="score-message"></p>
+      <button class="quiz-next" style="display:block;margin:24px auto 0;float:none;" onclick="restartQuiz()">Play Again</button>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>© 2024 Laguna College of Business and Arts</p>
+</footer>
+
+<script src="../scripts/quiz.js"></script>
+
+</body>
+</html>
